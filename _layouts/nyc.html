@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="">
+
+    <div class="">
+
+      <header class="pad-t-xl pad-x-m measure float-center">
+        <img src="/img/nyc/{{ page.day }}.jpg" />
+        <h6 class="uppercase pad-t-s">{{ page.date | date: "%m.%d.%Y" }}</h6>
+        <h1 class="">DAY {{ page.day }}</h1>
+        <!-- <h2 class="post-title">{{ page.title }}</h2> -->
+      </header>
+
+      <article class="measure float-center serif pad-b-xxl pad-x-m">
+        {{ content }}
+        <div class="map">
+
+        </div>
+      </article>
+    </div>
+
+  </body>
+
+</html>
