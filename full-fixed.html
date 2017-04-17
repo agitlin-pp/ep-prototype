@@ -41,10 +41,10 @@ speakers:
       </div>
       <div id="icons" class="pad-m col col-4">
         <a href="#" class="col col-6">
-          <img src="/img/cal.svg" alt="" class="icon">
+          <img src="{{ site.baseurl }}/img/cal.svg" alt="" class="icon">
         </a>
         <a href="#" class="col col-6">
-          <img src="/img/share.svg" alt="" class="icon">
+          <img src="{{ site.baseurl }}/img/share.svg" alt="" class="icon">
         </a>
       </div>
     </div>
@@ -62,7 +62,7 @@ speakers:
 
   <div id="hero-media"class="col col-12 m-col-6 border-box bg-red">
     <div class="w-50 pos-fix">
-      <img src="{{ page.hero }}" alt="">
+      <img src="{{ site.baseurl }}{{ page.hero }}" alt="">
     </div>
   </div>
 
@@ -87,7 +87,7 @@ speakers:
       <h5 class="uppercase pad-b-m">{{ page.speakers-heading }}</h5>
         {% for speaker in page.speakers %}
         <div class="col col-2 pad-y-m pad-r-m">
-          <img src="{{ speaker.img }}" alt="" class="">
+          <img src="{{ site.baseurl }}{{ speaker.img }}" alt="" class="">
         </div>
         <div class="col col-10 pad-m">
           <h4>{{ speaker.name }}</h4>
