@@ -1,0 +1,99 @@
+---
+layout: default-blk
+permalink: /full-card/
+
+host: Creative Mornings NYC
+date: Thurs 4/6/17
+time: "6:00PM-8:00PM EST"
+
+hero: /img/talk/hustle.jpg
+title: "Creative Mornings NYC: Leaving Pentagram for Your Side Hustle"
+desc: Featuring Jesse Reed and Hamish Smyth, Partners of the design consultancy Order
+cta: Register
+about:
+  heading: About the Event
+speakers-heading: The Speakers
+speakers:
+  - name: Jesse Reed
+    bio: Jesse Reed is originally from Youngstown, Ohio and attended the University of Cincinnati’s College of Design, Art, Architecture, and Planning. While at Pentagram, his clients included NYU, Hillary for America, Wildlife Conservation Society, Bobby Flay, Syracuse University, and Saks Fifth Avenue, among others.
+    img: /img/talk/jesse.png
+  - name: Hamish Smyth
+    bio: Hamish Smyth is originally from Adelaide, South Australia and attended the Royal Melbourne Institute of Technology. While at Pentagram, his clients included MasterCard, American Institute of Architects, Amalgamated Bank, New York City DOT, MTA, Yale School of Architecture, among others.
+    img: /img/talk/hamish.png
+---
+
+<section class="cf white">
+
+  <div id="hero-info" class="col col-12 m-col-6 pad-s border-box bg-blk">
+
+    <div class="col col-12">
+      <div class="pad-m col col-4">
+        <div class="uppercase">
+          <h6>Hosted By:</h6>
+          <h6>{{ page.host }}</h6>
+        </div>
+      </div>
+      <div class="pad-m col col-4 ">
+        <div class="uppercase">
+          <h6>{{ page.date }}</h6>
+          <h6>{{ page.time }}</h6>
+        </div>
+      </div>
+      <div id="icons" class="pad-m col col-4">
+        <a href="#" class="col col-6">
+          <img src="/img/cal.svg" alt="" class="icon">
+        </a>
+        <a href="#" class="col col-6">
+          <img src="/img/share.svg" alt="" class="icon">
+        </a>
+      </div>
+    </div>
+
+    <div id="text" class="col col-12 pad-m">
+      <!-- <h2>{{ page.host }}:</h2> -->
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.desc }}</p>
+      <div class="pad-y-l">
+          <a href="#" class="bg-wht pad-m pad-x-l pill"><span class="uppercase tracked h6">{{ page.cta }}</span></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="hero-media"class="col col-12 m-col-6 border-box bg-red">
+    <div class="">
+      <img src="{{ page.hero }}" alt="">
+    </div>
+  </div>
+
+</section>
+
+<section id="other-components" class="col col-6 width-50 bg-wht">
+  <div id="about" class="pad-m ">
+    <h5 class="uppercase">{{ page.about.heading }}</h5>
+    <p>
+      Jesse Reed and Hamish Smyth met as designers for Michael Bierut at the New York office of Pentagram Design, where they both spent the last three years as associate partners. In 2014, Reed and Smyth launched a Kickstarter campaign to reissue the 1970 NYCTA Graphics Standards Manual designed by Unimark International, specifically Massimo Vingelli and Bob Noorda. After a highly successful campaign raising over $800,000 in funding, the two decided to establish Standards Manual as a publishing imprint. To date, the company has released four titles—including the NASA Graphics Standards Manual and American Revolution Bicentennial Graphics Standards Manual—selling 30,000+ books.
+    </p>
+    <p>
+      In January of 2017 the two had left Pentagram and established a new design consultancy, Order. While the company is still in its early days, the goal is to maintain a broad range of clients similar to their experiences working under Bierut. In addition to client work, an initiative to provide communication materials for small non-profits and NGOs is planned as a primary objective. This would involve traveling to cities in the United States where design resources are limited, and providing materials that these organizations can put in place to better serve their mission.
+    </p>
+    <p>
+      Jesse and Hamish will speak about the spontaneity of collaboration and how a small project turned into a full time partnership—both in regards to Standards Manual and eventually Order—as well as the importance of historical preservation and not following the tech trend.
+    </p>
+  </div>
+
+  <div id="speakers" class="white pad-y-s">
+    <div class="pad-m col col-12 bg-blk ">
+      <h5 class="uppercase pad-b-m">{{ page.speakers-heading }}</h5>
+        {% for speaker in page.speakers %}
+        <div class="col col-2 pad-y-m pad-r-m">
+          <img src="{{ speaker.img }}" alt="" class="">
+        </div>
+        <div class="col col-10 pad-m">
+          <h4>{{ speaker.name }}</h4>
+          <p>{{ speaker.bio }}</p>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</section>
