@@ -6,7 +6,7 @@ baseurl: "/ep-prototype" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 twitter_username:
 instagram_username:
-github_username:  
+github_username:
 sass:
   sass_dir: _sass
   style: compressed
