@@ -1,14 +1,12 @@
 # Site settings
-title: spenhar
-email: hello@spenhar.com
-description: > # this means to ignore newlines until "baseurl:"
-  Personal portfolio and writings of Spencer Harrison (@spenhar)
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://spenhar.com" # the base hostname & protocol for your site
-twitter_username: spenhar
-instagram_username: spenhar
-github_username:  spenhar
-soundcloud_username: spenhar
+title: EP-prototype
+email:
+description:
+baseurl: "/ep-prototype" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+twitter_username:
+instagram_username:
+github_username:  
 sass:
   sass_dir: _sass
   style: compressed
